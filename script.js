@@ -5,7 +5,9 @@ const searchInput = document.querySelector("[data-search]");
 let users = [];
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase();
-  console.log(users);
+  users.forEach((user) => {
+    const isVisible = user.name.toLowerCase().includes(value);
+  });
 });
 
 fetch("https://jsonplaceholder.typicode.com/users")
