@@ -20,3 +20,12 @@ input {
   background-color: white;
   padding: 0.5rem;
 }
+
+.card > .header {
+  margin-bottom: 0.25rem;
+}
+
+.card > .body {
+  font-size: 0.8rem;
+  color: #777;
+}
