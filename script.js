@@ -5,6 +5,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .then((data) => {
     data.forEach((user) => {
       const card = userCardTemplate.content.cloneNode(true).children[0];
+      const header = card.querySelector("[data-header]");
+      const body = card.querySelector("[data-body]");
       console.log(user);
     });
   });
