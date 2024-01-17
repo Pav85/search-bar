@@ -1,4 +1,5 @@
 const userCardTemplate = document.querySelector("[data-user-template]");
+const userCardContainer = document.querySelector("[data-user-cards-container]");
 
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
