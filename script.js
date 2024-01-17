@@ -7,6 +7,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
       const card = userCardTemplate.content.cloneNode(true).children[0];
       const header = card.querySelector("[data-header]");
       const body = card.querySelector("[data-body]");
+      header.textContent = user.name;
+      body.textContent = user.email;
       console.log(user);
     });
   });
