@@ -10,6 +10,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
       const body = card.querySelector("[data-body]");
       header.textContent = user.name;
       body.textContent = user.email;
-      console.log(user);
+      userCardContainer.append(card);
     });
   });
