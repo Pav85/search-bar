@@ -1,35 +1,66 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Search Wrapper */
 .search-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-input {
+.search-label {
+  font-size: 1.2rem;
+}
+
+input[type="search"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font-size: 1rem;
 }
 
+/* User Cards */
 .user-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 0.25rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .card {
-  border: 1px solid black;
   background-color: white;
-  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.card > .header {
-  margin-bottom: 0.25rem;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.card > .body {
-  font-size: 0.8rem;
-  color: #777;
+.header {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
+.body {
+  font-size: 0.9rem;
+  color: #555;
+}
 .hide {
   display: none;
 }

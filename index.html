@@ -4,20 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js " defer></script>
+    <script src="script.js" defer></script>
     <title>Search Bar</title>
   </head>
   <body>
-    <div class="search-wrapper">
-      <label for="search">Search Users</label>
-      <input type="search" id="search" data-search />
-    </div>
-    <div class="user-cards" data-user-cards-container></div>
+    <main class="content">
+      <section class="search-wrapper">
+        <label for="search" class="search-label">Search Users</label>
+        <input
+          type="search"
+          id="search"
+          data-search
+          aria-label="Search Users"
+        />
+      </section>
+      <section class="user-cards" data-user-cards-container></section>
+    </main>
     <template data-user-template>
-      <div class="card">
-        <div class="header" data-header></div>
-        <div class="body" data-body></div>
-      </div>
+      <article class="card">
+        <h2 class="header" data-header></h2>
+        <p class="body" data-body></p>
+      </article>
     </template>
   </body>
 </html>
